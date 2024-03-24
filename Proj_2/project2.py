@@ -286,6 +286,8 @@ def generate_table(dataframe, max_rows=11):
 #                                               Layout Do DashBoard
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 
+server =app.server
+
 app.layout = html.Div(children=[
     html.H1(children='2nd Project '),
     html.Div(children='''
@@ -518,4 +520,4 @@ def update_table(selected_features, table_shape, forecast_method):
     return table_header, table_info, default_fig, {}
 
 if __name__ == '__main__':
-    app.run()
+    app.run(Debug=False)
