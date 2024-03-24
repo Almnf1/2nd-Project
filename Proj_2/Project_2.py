@@ -518,4 +518,4 @@ def update_table(selected_features, table_shape, forecast_method):
     return table_header, table_info, default_fig, {}
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
