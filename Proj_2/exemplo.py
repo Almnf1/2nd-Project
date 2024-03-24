@@ -285,6 +285,7 @@ def generate_table(dataframe, max_rows=11):
 
 #                                               Layout Do DashBoard
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server =app.server
 
 app.layout = html.Div(children=[
     html.H1(children='2nd Project '),
